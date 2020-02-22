@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#403075, #882D61);
+  background-image: linear-gradient(rgb(41, 116, 7), rgb(112, 80, 10));
 }
 
 .piano {
@@ -74,4 +74,30 @@ body {
 
 .Eb5-key {
   left: 310px;
+}
+
+.Q2-key{
+  left: 382px;
+}
+
+.Q4-key{
+  left: 418px;
+}
+.Q6-key{
+  left: 454px;
+}
+.Q9-key{
+  left: 526px;
+}
+.Q11-key{
+  left: 562px;
+}
+.Q14-key{
+  left: 634px;
+}
+.Q16-key{
+  left: 670px;
+}
+.Q18-key{
+  left: 707px;
 }

@@ -15,6 +15,29 @@ const Db5 = new Audio("sounds/Db5.mp3");
 const D5 = new Audio("sounds/D5.mp3");
 const Eb5 = new Audio("sounds/Eb5.mp3");
 const E5 = new Audio("sounds/E5.mp3");
+const Q1 = new Audio("sounds/Q1.mp3")
+const Q2 = new Audio("sounds/Q2.mp3");
+const Q3 = new Audio("sounds/Q3.mp3");
+const Q4 = new Audio("sounds/Q4.mp3");
+const Q5 = new Audio("sounds/Q5.mp3");
+const Q6 = new Audio("sounds/Q6.mp3");
+const Q7 = new Audio("sounds/Q7.mp3");
+const Q8 = new Audio("sounds/Q8.mp3");
+const Q9 = new Audio("sounds/Q9.mp3");
+const Q10 = new Audio("sounds/Q10.mp3");
+const Q11 = new Audio("sounds/Q11.mp3");
+const Q12 = new Audio("sounds/Q12.mp3");
+const Q13 = new Audio("sounds/Q13.mp3");
+const Q14 = new Audio("sounds/Q14.mp3");
+const Q15 = new Audio("sounds/Q15.mp3");
+const Q16 = new Audio("sounds/Q16.mp3");
+const Q17 = new Audio("sounds/Q17.mp3");
+const Q18 = new Audio("sounds/Q18.mp3");
+const Q19 = new Audio("sounds/Q19.mp3");
+const Q20 = new Audio("sounds/Q20.mp3");
+
+
+
 
 const playSound = audio => {
   const clone = audio.cloneNode();
@@ -178,56 +201,245 @@ const playE5 = () => {
   setTimeout(() => E5Key.classList.remove("active"), 200);
 };
 E5Key.addEventListener("click", playE5);
+/*
+// Q1
+const Q1Key = document.querySelector(".Q1-key");
+const playQ1 = () => {
+  playSound(Q1);
+  Q1Key.classList.add("active");
+  setTimeout(() => Q1Key.classList.remove("active"), 200);
+};
+Q1Key.addEventListener("click", playQ1);
+
+// Q2
+const Q2Key = document.querySelector(".Q2-key");
+const playQ2 = () => {
+  playSound(Q2);
+  Q2Key.classList.add("active");
+  setTimeout(() => Q2Key.classList.remove("active"), 200);
+};
+Q2Key.addEventListener("click", playQ2);
+
+// Q3
+const Q3Key = document.querySelector(".Q3-key");
+const playQ3 = () => {
+  playSound(Q3);
+  Q3Key.classList.add("active");
+  setTimeout(() => Q3Key.classList.remove("active"), 200);
+};
+Q3Key.addEventListener("click", playQ3);
+
+// Q4
+const Q4Key = document.querySelector(".Q4-key");
+const playQ4 = () => {
+  playSound(Q4);
+  Q4Key.classList.add("active");
+  setTimeout(() => Q4Key.classList.remove("active"), 200);
+};
+Q4Key.addEventListener("click", playQ4);
+
+// Q5
+const Q5Key = document.querySelector(".Q5-key");
+const playQ5 = () => {
+  playSound(Q5);
+  Q5Key.classList.add("active");
+  setTimeout(() => Q5Key.classList.remove("active"), 200);
+};
+Q5Key.addEventListener("click", playQ5);
+
+// Q6
+const Q6Key = document.querySelector(".Q6-key");
+const playQ6 = () => {
+  playSound(Q6);
+  Q6Key.classList.add("active");
+  setTimeout(() => Q6Key.classList.remove("active"), 200);
+};
+Q6Key.addEventListener("click", playQ6);
+
+// Q6
+const Q7Key = document.querySelector(".Q7-key");
+const playQ7 = () => {
+  playSound(Q7);
+  Q7Key.classList.add("active");
+  setTimeout(() => Q7Key.classList.remove("active"), 200);
+};
+Q7Key.addEventListener("click", playQ7);
+
+// Q6
+const Q8Key = document.querySelector(".Q8-key");
+const playQ8 = () => {
+  playSound(Q8);
+  Q8Key.classList.add("active");
+  setTimeout(() => Q8Key.classList.remove("active"), 200);
+};
+Q8Key.addEventListener("click", playQ8);
+
+// Q6
+const Q9Key = document.querySelector(".Q9-key");
+const playQ9 = () => {
+  playSound(Q9);
+  Q9Key.classList.add("active");
+  setTimeout(() => Q9Key.classList.remove("active"), 200);
+};
+Q9Key.addEventListener("click", playQ9);
+
+// Q6
+const Q10Key = document.querySelector(".Q10-key");
+const playQ10 = () => {
+  playSound(Q10);
+  Q10Key.classList.add("active");
+  setTimeout(() => Q10Key.classList.remove("active"), 200);
+};
+Q10Key.addEventListener("click", playQ10);
+
+// Q6
+const Q11Key = document.querySelector(".Q11-key");
+const playQ11 = () => {
+  playSound(Q11);
+  Q11Key.classList.add("active");
+  setTimeout(() => Q11Key.classList.remove("active"), 200);
+};
+Q11Key.addEventListener("click", playQ11);
+
+// Q6
+const Q12Key = document.querySelector(".Q12-key");
+const playQ12 = () => {
+  playSound(Q12);
+  Q12Key.classList.add("active");
+  setTimeout(() => Q12Key.classList.remove("active"), 200);
+};
+Q12Key.addEventListener("click", playQ12);
+
+// Q6
+const Q13Key = document.querySelector(".Q13-key");
+const playQ12 = () => {
+  playSound(Q13);
+  Q13Key.classList.add("active");
+  setTimeout(() => Q13Key.classList.remove("active"), 200);
+};
+Q13Key.addEventListener("click", playQ13);
+
+// Q6
+const Q14Key = document.querySelector(".Q14-key");
+const playQ14 = () => {
+  playSound(Q14);
+  Q14Key.classList.add("active");
+  setTimeout(() => Q14Key.classList.remove("active"), 200);
+};
+Q14Key.addEventListener("click", playQ14);
+
+// Q6
+const Q15Key = document.querySelector(".Q15-key");
+const playQ15 = () => {
+  playSound(Q15);
+  Q15Key.classList.add("active");
+  setTimeout(() => Q15Key.classList.remove("active"), 200);
+};
+Q15Key.addEventListener("click", playQ15);
+*/
 
 window.addEventListener("keydown", ({ keyCode }) => {
-  // Press Q
-  if (keyCode === 81) return playC4();
+  // Press Z
+  if (keyCode === 90) return playC4();
 
-  // Press 2
-  if (keyCode === 50) return playDb4();
+  // Press X
+  if (keyCode === 88) return playDb4();
 
-  // Press W
-  if (keyCode === 87) return playD4();
+  // Press C
+  if (keyCode === 67) return playD4();
 
-  // Press 3
-  if (keyCode === 51) return playEb4();
+  // Press V
+  if (keyCode === 86) return playEb4();
 
-  // Press E
-  if (keyCode === 69) return playE4();
+  // Press B
+  if (keyCode === 66) return playE4();
 
-  // Press R
-  if (keyCode === 82) return playF4();
+  // Press N
+  if (keyCode === 78) return playF4();
 
-  // Press 5
-  if (keyCode === 53) return playGb4();
+  // Press M
+  if (keyCode === 77) return playGb4();
 
-  // Press T
-  if (keyCode === 84) return playG4();
+  // Press ,
+  if (keyCode === 188) return playG4();
 
-  // Press 6
-  if (keyCode === 54) return playAb4();
+  // Press .
+  if (keyCode === 190) return playAb4();
 
-  // Press Y
-  if (keyCode === 89) return playA4();
+  // Press /
+  if (keyCode === 191) return playA4();
 
-  // Press 7
-  if (keyCode === 55) return playBb4();
+  // Press A
+  if (keyCode === 65) return playBb4();
 
-  // Press U
-  if (keyCode === 85) return playB4();
+  // Press S
+  if (keyCode === 83) return playB4();
 
-  // Press I
-  if (keyCode === 73) return playC5();
+  // Press D
+  if (keyCode === 68) return playC5();
 
-  // Press 9
-  if (keyCode === 57) return playDb5();
+  // Press F
+  if (keyCode === 70) return playDb5();
 
-  // Press O
-  if (keyCode === 79) return playD5();
+  // Press G
+  if (keyCode === 71) return playD5();
 
-  // Press 0 
-  if (keyCode === 48) return playEb5();
+  // Press H 
+  if (keyCode === 72) return playEb5();
 
-  // Press P
-  if (keyCode === 80) return playE5();
+  // Press J
+  if (keyCode === 74) return playE5();
+
+  //Press K
+  if(keyCode === 75) return playQ1();
+
+  //Press L
+  if(keyCode === 76) return playQ2();
+
+  //Press ;
+  if(keyCode === 186) return playQ3();
+
+  //Press ''
+  if(keyCode === 192) return playQ4();
+
+  //Press \
+  if(keyCode === 222) return playQ5();
+
+  //Press Q
+  if(keyCode === 81) return playQ6();
+
+  //Press W
+  if(keyCode === 87) return playQ67();
+
+  //Press E
+  if(keyCode === 69) return playQ8();
+
+  //Press R
+  if(keyCode === 82) return playQ9();
+
+  //Press T
+  if(keyCode === 84) return playQ10();
+
+  //Press Y
+  if(keyCode === 89) return playQ11();
+
+  //Press U
+  if(keyCode === 85) return playQ12();
+
+  //Press I
+  if(keyCode === 73) return playQ13();
+
+  //Press O
+  if(keyCode === 79) return playQ14();
+
+  //Press P
+  if(keyCode === 80) return playQ15();
+
+  //Press [
+  if(keyCode === 219) return playQ16();
+
+  //Press ]
+  if(keyCode === 221) return playQ17();
+
+  
 }); 
