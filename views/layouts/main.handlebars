@@ -5,8 +5,9 @@
   <title>Piano</title>
   <link rel="stylesheet" href="/css/navigation.css" type="text/css">
   <link rel="stylesheet" href="/css/materialize.min.css" type="text/css">
+    {{#block "links"}}
+    {{/block}}
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
@@ -24,8 +25,10 @@
 {{{body}}}
 
 <footer>
-    <script src="/javascript/jquery-3.4.1.min.js"></script>
-    <script src="/javascript/materialize.min.js"></script>
 </footer>
+<script src="/javascript/materialize.min.js"></script>
+<script src="/javascript/jquery-3.4.1.min.js"></script>
+{{#block "scripts"}}
+{{/block}}
 </body>
 </html>

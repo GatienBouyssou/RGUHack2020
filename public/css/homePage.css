@@ -56,11 +56,11 @@ header label a {
 
 }
 
-.container {
+.containerDrum {
   left: 50%;
   z-index: 0;
   float: left;
-  width: 1100px;
+  width: 70%;
   height: auto;
   margin-left: 100px;
   max-height: 100vh;
@@ -68,7 +68,7 @@ header label a {
   transform: translateX(-50%);
 }
 
-.row {
+.rowDrum {
 
   float: left;
   clear: both;
@@ -76,14 +76,14 @@ header label a {
   height: auto;
   max-width: 100%;
   border-bottom: 8px solid #16181C;
-
+  margin-bottom: 0;
 }
 
-.row:last-child {
+.rowDrum:last-child {
     border-bottom-style: none;
 }
 
-/*.row::before {
+/*.rowDrum::before {
 
   top: 0px;
   left: -208px;
@@ -101,7 +101,7 @@ header label a {
 
 }*/
 
-/*.row::after {
+/*.rowDrum::after {
 
   top: 15%;
   left: -198px;
@@ -221,7 +221,7 @@ header label a {
 
 }
 
-.enable-disable-row {
+.enable-disable-rowDrum {
 
   top: 50%;
   left: -60px;
@@ -241,7 +241,7 @@ header label a {
 
 }
 
-.enable-disable-row.disabled {
+.enable-disable-rowDrum.disabled {
 
   background: #CF472F;
 

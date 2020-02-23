@@ -5,4 +5,5 @@ module.exports = function(app) {
 
     app.get('/', welcomePageController.welcomePage);
 
+    app.get('*', welcomePageController.errorPage)
 };

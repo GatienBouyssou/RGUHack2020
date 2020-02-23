@@ -8,7 +8,6 @@ $(document).ready(function () {
 
   const C4 = new Audio("../sounds/C4.mp3");
 
-
   const nbrOfRows = 4;
   const nbrOfColumn = 4;
 
@@ -18,11 +17,11 @@ $(document).ready(function () {
 
   function createMatrix(rows, columns) {
 
+
     let sampleSize  = $_containerWidth*0.7 / columns;
 
     for(let i = 0; i < rows; i++) {
-
-      $('<div class="row" id="row-' + i + '"></div>').appendTo('.container');
+      $('<div class="rowDrum" id="row-' + i + '"></div>').appendTo('.containerDrum');
 
       /*
               $('<button class="enable-disable-row" id="toggle-row-' + i + '"></button>').prependTo('#row-' + i);
@@ -36,7 +35,9 @@ $(document).ready(function () {
 
     }
 
-    $_toggleRowBtn = $('.enable-disable-row');
+/*
+    $_toggleRowBtn = $('.enable-disable-rowDrum');
+*/
     $_sampleBtn = $('.sample');
 
   }

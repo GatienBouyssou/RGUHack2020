@@ -24,9 +24,14 @@ app.use(function(request, response, next){
 });*/
 
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname + '/Views'));
+let exphbs = require('express-handlebars');
+app.set('view engine', 'handlebars'); //nom de l'extension des fichiers
+let handlebars  = require('./helpers/handlebars.js')(exphbs); //emplacement des helpers
+app.engine('handlebars', handlebars.engine);
 app.use(express.static(path.join(__dirname + '/public')));
+handlebars = require('handlebars'),
+layouts = require('handlebars-layouts');
+handlebars.registerHelper(layouts(handlebars));
 
 require('./router/router')(app);
 
