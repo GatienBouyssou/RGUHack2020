@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/GatienBouyssou/RGUHack2020#readme",
   "dependencies": {
+    "async": "^3.1.1",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
     "handlebars-layouts": "^3.1.4",
+    "mmmagic": "^0.5.3",
     "moment": "^2.24.0"
   }
 }

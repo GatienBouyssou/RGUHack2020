@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  width: 50%;
+  height:10%;
+  margin:auto;
+}
+
+.white-key {
+  width: 40px;
+  height: 120px;
+  background-color: #FFF;
+  border: 4px solid black;
+  border-radius: 0 0 6px 6px;
+  margin-left: -4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.white-key.active {
+  background-color: #C0C0C0;
+}
+
+.black-key {
+  position: absolute;
+  width: 24px;
+  height: 80px;
+  background-image: linear-gradient(#000000, #303030);
+  border: 3px solid black;
+  border-radius: 0 0 2px 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.black-key.active {
+  background-image: linear-gradient(#000000, #101010);
+}
+
+.Db4-key {
+  left: 22px;
+}
+
+.Eb4-key {
+  left: 58px;
+}
+
+.Gb4-key {
+  left: 130px;
+}
+
+.Ab4-key {
+  left: 166px;
+}
+
+.Bb4-key {
+  left: 202px;
+}
+
+.Db5-key {
+  left: 274px;
+}
+
+.Eb5-key {
+  left: 310px;
+}
+
+.Q2-key{
+  left: 382px;
+}
+
+.Q4-key{
+  left: 418px;
+}
+.Q6-key{
+  left: 454px;
+}
+.Q9-key{
+  left: 526px;
+}
+.Q11-key{
+  left: 562px;
+}
+.Q14-key{
+  left: 634px;
+}
+.Q16-key{
+  left: 670px;
+}
+.Q18-key{
+  left: 707px;
+}

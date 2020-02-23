@@ -6,6 +6,7 @@ const express         = require('express'),
 let app = express();
 
 app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.json());
 app.set('port', 6900);
 
 /*app.use(cookieParser());
@@ -27,10 +28,12 @@ app.use(function(request, response, next){
 let exphbs = require('express-handlebars');
 app.set('view engine', 'handlebars'); //nom de l'extension des fichiers
 let handlebars  = require('./helpers/handlebars.js')(exphbs); //emplacement des helpers
+
 app.engine('handlebars', handlebars.engine);
 app.use(express.static(path.join(__dirname + '/public')));
+
 handlebars = require('handlebars'),
-layouts = require('handlebars-layouts');
+    layouts = require('handlebars-layouts');
 handlebars.registerHelper(layouts(handlebars));
 
 require('./router/router')(app);
